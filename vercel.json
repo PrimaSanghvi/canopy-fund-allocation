@@ -2,21 +2,33 @@
     "version": 2,
     "builds": [
       {
+        
         "src": "website/frontend/package.json",
         "use": "@vercel/static-build",
-        "config": { "distDir": "website/frontend/build" }
+        "config": {
+    
+          "distDir": "build",
+          
+         
+          "installCommand": "npm install",
+          "buildCommand": "npm run build"
+        }
       },
       {
+       
         "src": "website/backend/asgi.py",
         "use": "@vercel/python"
+       
       }
     ],
     "routes": [
       {
+    
         "src": "/api/(.*)",
         "dest": "website/backend/asgi.py"
       },
       {
+       
         "src": "/(.*)",
         "dest": "website/frontend/build/$1"
       }
