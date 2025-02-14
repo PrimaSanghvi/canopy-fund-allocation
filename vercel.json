@@ -11,14 +11,14 @@
         }
       },
       {
-        "src": "backend/backend/asgi.py",
+        "src": "website/backend/backend/asgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "backend/backend/asgi.py"
+        "dest": "website/backend/backend/asgi.py"
       },
       {
         "src": "/(.*)",
