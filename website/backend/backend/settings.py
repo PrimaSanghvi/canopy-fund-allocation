@@ -26,7 +26,12 @@ SECRET_KEY = "django-insecure-hr*o&_&3#46g(!b(%*77w@x#m0%hya(!$c5b+c&5^39(!ntt01
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    
+".vercel.app",    # Allow any subdomain on vercel.app
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -134,4 +139,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React frontend
+    "https://canopy-fund-allocation-7ah6.vercel.app/",
 ]
