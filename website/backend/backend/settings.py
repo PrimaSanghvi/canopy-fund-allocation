@@ -140,5 +140,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
      "http://localhost:3000",  # React frontend
-    "https://canopy-fund-allocation-7ah6.vercel.app/"
+    "https://canopy-fund-allocation.vercel.app/"
 ]
