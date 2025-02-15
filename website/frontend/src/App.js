@@ -27,7 +27,7 @@ function App() {
     console.log("Payload:", payload);
   
     try {
-      const response = await fetch("https://canopy-fund-allocation-new.onrender.com/api/allocate/", { // Updated to use 127.0.0.1
+      const response = await fetch(`${process.env.REACT_APP_API_URL}`, { // Updated to use 127.0.0.1
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
