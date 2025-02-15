@@ -28,7 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     
-".vercel.app",    # Allow any subdomain on vercel.app
+   ".onrender.com",    # Allow any subdomain on onrender.com
+    "canopy-backend.onrender.com",  # Specific domain 
     "localhost",
     "127.0.0.1",
 ]
@@ -139,5 +140,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
      "http://localhost:3000",  # React frontend
-    #"https://canopy-fund-allocation-7ah6.vercel.app/", 
+    "https://canopy-fund-allocation-7ah6.vercel.app/"
 ]
