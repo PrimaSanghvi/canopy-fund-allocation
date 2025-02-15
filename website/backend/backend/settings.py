@@ -29,9 +29,9 @@ DEBUG = False
 ALLOWED_HOSTS = [
     
    ".onrender.com",    # Allow any subdomain on onrender.com
-    "canopy-backend.onrender.com",  # Specific domain 
     "localhost",
     "127.0.0.1",
+    "canopy-fund-allocation-new.onrender.com"
 ]
 
 
